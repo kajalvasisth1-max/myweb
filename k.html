@@ -1,0 +1,132 @@
+<!doctype html>
+<html>
+<head><!-- creating web photo gallery-->
+<title>photogallery
+</title>
+
+</head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+/* css */
+/* tag style */
+/* selector */
+html
+{margin:0px;
+padding:0px;}
+header
+{background:black;
+height:200px;
+margin:auto;
+margin-top:-8px;
+margin-bottom:30px;
+color:white;
+font-size:50px;
+font-family:arial black;
+text-align:center;
+box-sizing:border-box;
+padding-top:15px;
+box-shadow:0px 0px 0px lime;
+}
+/*creating class */
+main
+{width:100%;
+margin:auto;
+text-align:center;}
+
+.pic
+{
+width:80%;
+box-shadow:2px 2px 15px cyan;
+cursor:pointer;
+transition:0.50s;
+margin:30px;
+border-radius:200px;
+
+}
+.pic:hover
+{
+border-radius:0;
+}
+body
+{
+background:pink;
+}
+/* rwd */
+/* extra small devices (phones, 600px and down) */
+@media only screen and (max-width:600px)
+{
+body{ background:green}
+header{
+// display:none;
+font-size:15px;
+padding:0px;
+margin-bottom:15px;
+
+}
+.pic{
+width:100%;
+margin:0px;
+margin-bottom:12px;
+
+}
+
+}
+/* small devices (portrait tablets and large phones, 600px and up) */
+ @media only screen and (min-width:600px;)
+{
+body{background:blue}
+header{
+height:100px;
+color:orange;
+
+}
+}
+
+/* medium devices (landscape tablets, 768px and up) */
+@ media only screen and (min-width;768px)
+{
+body{background:indigo}
+header{height:200px;color:white;}
+.pic
+{width:40%;}
+}
+/* large devices (laptops/desktops,992px and up) */
+@media only screen and (min-width:992px)
+{
+body{background:cyan;}
+.pic{width:20%;}
+header{height:200px}
+
+}
+/* extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width:1200px)
+{
+body{background:#ffa500}
+}
+
+
+</style>
+<header>
+web photogallery
+</header>
+<!--
+rwd:-responsive web design
+target the device:- known as break point
+mobile first
+media query
+width :use% -->
+<body>
+<main>
+<img class="pic" src="images/pp1.jpg" alt="flower pic">
+<img class="pic" src="images/pp2.jpg" alt="flower pic">
+<img class="pic" src="images/pp3.jpg" alt="flower pic">
+<img class="pic" src="images/pp4.jpg" alt="flower pic">
+<img class="pic" src="images/pp5.jpg" alt="flower pic">
+<img class="pic" src="images/pp6.jpg" alt="flower pic">
+<img class="pic" src="images/pp7.jpg" alt="flower pic">
+</main>
+<footer>
+footer
+</footer>
+</body>
+</html>
