@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>banner in html</title>
+</head>
+<style>
+    @keyframes ani1
+    {
+10%{left:0%;}
+
+
+20%{left:-19%;}
+30%{left:-19%;}
+
+
+40%{left:-38%;}
+50%{left:-38%;}
+
+
+60%{left:-57%;}
+70%{left:-57%;}
+
+
+    }
+    body
+    {
+            margin:0px;
+            padding:0px;
+    
+    }
+    header
+    {
+        width:520%;
+        border:1px black solid;
+        height:100px;
+        margin:auto;
+        box-shadow:10px 10px gray;
+    }
+        .pic
+        {
+            width:19%;
+            height:100px;
+            margin-left:-4px;
+            position:relative;
+            animation:ani1 12s infinite ease-out alternate-reverse;
+            object-fit:cover;
+        }
+        #mask
+        {
+                width:99%;
+                height:100px;
+                margin:auto;
+                overflow:hidden;
+
+
+        }
+       @media only screen and (min-width:768px)
+       {
+        body
+        #mask
+
+        {
+           width:99%;
+           height:200px; 
+        }
+        .pic
+        {
+                height:200px;
+        }
+
+       } 
+       @media only screen and (min-width:992px)
+       {
+        body
+            #mask
+            {
+                width:100%;
+                height:450px;
+
+            }
+            .pic
+            {
+                height:450px;
+
+            }
+       }
+
+
+    }
+    </style>
+    <div id="mask">
+        <header>
+            <img src="images/pp1.jpg" class="pic">
+            <img src="images/pp2.jpg" class="pic">
+            <img src="images/pp3.jpg" class="pic">
+            <img src="images/pp4.jpg" class="pic">
+
+            </header>
+            </div>
+<body>
+    
+</body>
+</html>
